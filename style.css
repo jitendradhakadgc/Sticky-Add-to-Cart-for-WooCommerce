@@ -1,0 +1,72 @@
+/*
+Theme Name: Impreza Child
+Template: Impreza
+Version: 1.0
+Author:	UpSolution
+Theme URI: http://impreza.us-themes.com/
+Author URI: http://us-themes.com/
+*/
+
+
+
+/* Trick to use for Variable Pricing By Hassan: */
+
+/* 
+    Customize deleted prices within the header of restaurant menu products:
+    - Changes color to black (#000).
+    - Removes text decoration (like strikethrough).
+    - Sets opacity to fully opaque for clear visibility.
+    - Makes the price bold.
+*/
+.wc-restaurant-menu-product .header .price del {
+    color: #000 !important;
+    text-decoration: none;
+    opacity: 1 !important;
+    font-weight: bold !important; /* Make the price bold */
+}
+
+/* 
+    Hide inserted prices within the header of restaurant menu products.
+*/
+.wc-restaurant-menu-product .header .price ins {
+    display: none;
+}
+
+
+/* Add a plus sign after the displayed price */
+.wc-restaurant-menu-product .header .price del:after {
+    content: "+" !important; /* Add the plus sign */
+}
+
+
+.cst-cart .woocommerce .variation {
+    display: flex;
+    flex-wrap: wrap;
+}
+.woocommerce-mini-cart dl.variation {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+/*
+Author: David Gabran
+*/
+
+/* Add the CSS code to min-cartstyle.css */
+
+/* Remove the vertical scrollbar */
+.custom-layout .cart-area::-webkit-scrollbar {
+    display: none !important;
+}
+
+/* Adjust the width of the right column cart content */
+.cst-cart .widget_shopping_cart_content {
+    max-height: unset !important; /* Remove the max height limit */
+}
